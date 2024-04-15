@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/ov.css">
+        <link rel="stylesheet" href="../css/departement-admin.css">
+        <title>Administration - Police Nationale</title>
+    </head>
+    <body>
+    
+        <div class="divflex vcenter content bg-secondary">
+            <div class="">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                        <i class="mdi mdi-account-tie" style="font-size: 1.5em"></i><span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu discon">
+                        <li class="bg-success"><a href="#">Profil</a></li>
+                        <li><a href="deconnexion.php">Déconnexion</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="ml-5 mr-0 text-white h3"><i class="mdi mdi-home"></i>Administration - Police Nationale</h1>
+        
+            <div class="divflex hcenter menudiv">
+                <div class="dropdown">
+                <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" type="button" name="button">Demandes</button>
+                    <ul class="dropdown-menu" id="drpmenu">
+                        <li><a href="../demande/carte-identite/reponse-carte-identite.php" target="fram">Carte d'identité</a></li>
+                        <li><a href="../demande/certificat-perte/reponse-certificat-perte.php" target="fram">Certificat de perte</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown ml-3 mr-5">
+                    <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" type="button" name="button">Papiers</button>
+                    <ul class="dropdown-menu" id="drpmenu">
+                        <li><a href="../demande/carte-identite/tableau_carte_d_identite.php" target="fram">Carte d'identité</a></li>
+                        <li><a href="../demande/certificat-perte/reponse-certificat-perte.php" target="fram">Certificat de perte</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rechform">
+                <form action="" class="">
+                    <div class="input-group ">
+                        <input type="search" placeholder="Rechercher" name="Rechercher" class="form-control">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary"><i class="mdi mdi-table-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <iframe src="../demande/carte-identite/tableau_carte_d_identite.php" width="100%" height="500px" id="ifr" name="fram">
+
+        </iframe>
+        <script src="../js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/fontawesome-all.min.js"></script>
+    </body>
+</html>

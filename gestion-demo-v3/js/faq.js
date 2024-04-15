@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $('.reponse').hide();
+    $('button').each(function(){
+      $(this).click(function(){
+        $(this).next().toggle();
+        $('.reponse').not($(this).next()).hide();
+      });
+    });
+  });

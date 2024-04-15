@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Inscription - Responsable</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="row p-3">
+                <div class="mx-auto offset-1 col-10 p-4 offset-sm-2 col-sm-8 p-sm-4 offset-md-4 col-md-6 offset-lg-4 col-lg-4 mt-4
+                border border-primary bg-dark">
+                    <h1 class="h3 text-center text-white">Inscription d'un responsable</h1>
+                    <form action="inscription-responsable.php" method="POST" class="mt-3 text-white">
+                        <div class="form-group">
+                            <label for="nom_resp">Nom du responsable*</label>
+                            <input type="text" name="nom_resp" id="nom_resp" class="form-control" placeholder="Entrez le nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom_resp">Prénom du responsable</label>
+                            <input type="text" name="prenom_resp" id="prenom_resp" class="form-control" placeholder="Entrez le prénom">
+                        </div>
+                        <div class="form-group">
+                            <label for="profession_resp">Profession</label>
+                            <input type="text" id="profession_resp" name="profession_resp" class="form-control" placeholder="Entrez la profession">
+                        </div>
+                        <div class="form-group">
+                            <label for="lieu_travail">Lieu de travail</label>
+                            <input type="text" name="lieu_travail" id="lieu_travail" class="form-control" placeholder="Entrez le lieu de travail">
+                        </div>
+                        <div class="form-group">
+                            <label for="service_resp">Service du responsable</label>
+                            <select name="service_resp" id="service_resp" class="custom-select">
+                                <option value="">Choisissez ...</option>
+                                <option value="DECLARATION_NAISSANCE">Déclaration de naissance</option>
+                                <option value="ACTE_NAISSANCE">Acte de naissance</option>
+                                <option value="CERTIFICAT_MARIAGE">Certificat de mariage</option>
+                                <option value="DECLARATION_DECES">Déclaration de décès</option>
+                                <option value="CERTIFICAT_DECES">Certificat de décès</option>
+                                <option value="CARTE_IDENTITE">Carte d'identité</option>
+                                <option value="PASSEPORT">Passeport</option>
+                                <option value="CASIER_JUDICIAIRE">Casier judiciaire</option>
+                                <option value="ANTECEDANT_INFRACTION">Antécédant des infractions</option>
+                                <option value="CERTIFICAT_NATIONALITE">Certificat de nationalité</option>
+                                <option value="CERTIFICAT_RESIDENCE">Certificat de résidence</option>
+                                <option value="CERTIFICAT_SEJOUR">Certificat de séjour</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="adresse_resp">Adresse</label>
+                            <input type="text" name="adresse_resp" id="adresse_resp" class="form-control" placeholder="Ex: Conakry/Ratoma/Kobayah">
+                        </div>
+                        <div class="form-group">
+                            <label for="user_resp">Nom d'utilisateur</label>
+                            <input type="text" name="user_resp" id="user_resp" class="form-control" placeholder="Entrez le nom d'utilisateur">
+                        </div>
+                        <div class="form-group">
+                            <label for="password_resp">Mot de passe</label>
+                            <input type="password" name="password_resp" id="password_resp" class="form-control"  placeholder="Entrez le mot de passe">
+                        </div>
+                        <div class="form-group">
+                            <label for="confpassword_resp">Confirmer le mot de passe</label>
+                            <input type="password" name="confpassword_resp" id="confpassword_resp" class="form-control" placeholder="Entrez le mot de passe">
+                        </div>
+                        <div class="form-group">
+                            <label for="type_compte">Type de compte</label>
+                            <select name="type_compte" id="type_compte" class="custom-select">
+                                <option value="">Choisissez</option>
+                                <option value=1>Administrateur</option>
+                                <option value=2>Autre</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <button type="submit" name="enregistrer" class="btn btn-success mt-3">Valider</button>
+                            <button type="reset" class="btn btn-danger mt-3">Annuler</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="../js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/fontawesome-all.min.js"></script>
+    </body>
+</html>

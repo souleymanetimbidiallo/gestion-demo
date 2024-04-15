@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Certificat de perte</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="offset-4 col-4 mt-5">
+                <form action="certificat-perte.php" method="POST">
+                    <fieldset>
+                        <legend>Certificat de perte</legend>
+                        <div class="form-group">
+                            <label for="id_responsable">Identifiant du responsable</label>
+                            <input type="text" name="id_responsable" id="id_responsable" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="nom_objet">Nom de l'objet</label>
+                            <input type="text" name="nom_objet" id="nom_objet" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="reference">Reference de la perte</label>
+                            <input type="text" name="reference" id="reference" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_perte">Date de la perte</label>
+                            <input type="date" name="date_perte" id="date_perte" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Valider</button>
+                            <button type="reset" class="btn btn-danger">Annuler</button>
+                        </div>     
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/fontawesome-all.min.js"></script>
+    </body>
+</html>

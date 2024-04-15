@@ -1,0 +1,43 @@
+@media screen and (max-width: 720px) {
+    .entete {
+      margin-top: 3em;
+    }
+    .hend{
+      justify-content: center;
+    }
+}
+
+* {
+  box-sizing: border-box;
+}
+.divflex{
+  display: flex;
+}
+.halign{
+  flex-direction: row;
+}
+.valign{
+  flex-direction: column;
+}
+.hcenter{
+  justify-content: center;
+}
+.vcenter{
+  align-items: center;
+}
+
+
+
+
+.hend{
+  justify-content: flex-end;
+}
+.divflexinlign{
+  display: inline-flex;
+}
+.flexspacearound{
+  justify-content: space-around;
+}
+.flexspacebetween{
+  justify-content: space-between;
+}

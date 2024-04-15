@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Certificat de residence</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="offset-4 col-4 mt-5">
+                <form action="certificat-residence.php" method="POST">
+                    <fieldset>
+                        <legend>Certificat de residence</legend>
+                        <div class="form-group">
+                            <label for="id_responsable">Identifiant du responsable</label>
+                            <input type="text" name="id_responsable" id="id_responsable" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="ville_res">Ville</label>
+                            <input type="text" name="ville_res" id="ville_res" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="quartier_res">Quartier</label>
+                            <input type="text" name="quartier_res" id="quartier_res" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="secteur_res">Secteur </label>
+                            <input type="text" name="secteur_res" id="secteur_res" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="num_rue">Numéro de la rue</label>
+                            <input type="number" name="num_rue" id="num_rue" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="num_batiment">Numéro du batiment</label>
+                            <input type="number" name="num_batiment" id="num_batiment" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_arrivee">Date d'arrivée</label>
+                            <input type="date" name="date_arrivee" id="date_arrivee" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_confection">Date de confection</label>
+                            <input type="date" name="date_confection" id="date_confection" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_expiration">Date d'expiration</label>
+                            <input type="date" name="date_expiration" id="date_expiration" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="num_famille">Numéro du batiment</label>
+                            <input type="number" name="num_famille" id="num_famille" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Valider</button>
+                            <button type="reset" class="btn btn-danger">Annuler</button>
+                        </div>     
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/fontawesome-all.min.js"></script>
+    </body>
+</html>

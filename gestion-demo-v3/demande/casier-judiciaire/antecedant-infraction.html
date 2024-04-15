@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Antécédant d'infraction</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <main class="container-fluid">
+            <div class="offset-4 col-4 my-3">
+                <form action="antecedant-infraction.php" method="POST">
+                    <fieldset>
+                        <legend>Antécédant infraction</legend>
+                        <div class="form-group">
+                            <label for="id_citoyen">ID Citoyen</label>
+                            <input type="text" name="id_citoyen" id="id_citoyen" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="id_responsable">ID Responsable</label>
+                            <input type="text" name="id_responsable" id="id_responsable" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="titre_inf">Titre de l'infraction</label>
+                            <input type="text" id="titre_inf" name="titre_inf" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="description_inf">Description de l'infraction</label>
+                            <textarea name="description_inf" id="description_inf" cols="30" rows="5" class="form-control form-control-sm"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="motif_inf">Motif de l'infraction</label>
+                            <textarea name="motif_inf" id="motid_inf" cols="30" rows="5" class="form-control form-control-sm"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="degre_inf">Dégré de l'infraction</label>
+                            <input type="text" name="degre_inf" id="degre_inf" class="form-control form-control-sm" placeholder="Ex: Mineure">
+                        </div>
+                        <div class="form-group">
+                            <label for="date_inf">Date de l'infraction</label>
+                            <input type="date" name="date_inf" id="date_inf" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <label for="lieu_inf">Lieu de l'infraction</label>
+                            <input type="text" name="lieu_inf" id="lieu_inf" class="form-control form-control-sm">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Valider</button>
+                            <button type="reset" class="btn btn-danger">Annuler</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        
+        <script src="../../js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/fontawesome-all.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.contenu{
+  padding: 2em;
+}
+.auth input{
+  margin-top: 0.6em;
+}
+.left i{
+  font-size: 10em;
+  color: red;
+}
+.left p{
+  margin-top: -3em;
+  font-weight: bold;
+}
+.left{
+  border-right: 2px solid green;
+  margin-right: 2em;
+  padding-right: 2em;
+}
+#logo-admin{
+  width: 97px;
+  height: 115px;
+  border-radius: 2em;
+}

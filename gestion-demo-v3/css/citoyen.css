@@ -1,0 +1,206 @@
+@media screen and (max-width: 720px) {
+    .entete {
+      margin-top: 3em;
+    }
+    .hend{
+
+    }
+    .bigmenu{
+      display: none;
+    }
+    .inp{
+      width: 30px;
+    }
+    .serc h2{
+      text-align: center;
+    }
+    #inpid{
+      width: 20em;
+    }
+    .foot{
+      flex-direction: column;
+    }
+    .foot div{
+      margin-top: 1.2em;
+    }
+    .foot h6{
+      background-color: orange;
+      padding: 0.2em;
+      border-radius: 3px;
+    }
+    .rens .ilab{
+      font-size: 1.3em;
+      margin-right: 0.1em;
+    }
+
+}
+header{
+  
+}
+.logodiv{
+  position: absolute;
+  top: 0.2em;
+  left: 0.5em;
+}
+#logo{
+  width: 60px;
+  height: 72px;
+  border-radius: 2em;
+}
+.entete{
+  padding-top: 1.5em;
+  padding-right: 0.5em;
+}
+.entete a{
+  display: block;
+  padding: 0.3em 0.5em;
+  border-bottom: 1px solid white;
+}
+.entete a:hover{
+  border-bottom: 1px solid red;
+  text-decoration: none;
+}
+.logoa{
+  display: block;
+  padding: 0em;
+  border-bottom: 0px;
+  color: black;
+}
+.logoa:hover{
+  border-bottom: 0px;
+  text-decoration: none;
+
+}
+.entete i{
+  font-size: 1.6em;
+}
+#account{
+  padding: 0px 0.5em;
+}
+
+
+
+.serc{
+  margin-top: 1em;
+  background-image: url('img/best/footer.png');
+  background-color: teal;
+  padding: 1em;
+}
+.serc h2{
+  color: white;
+}
+.inp{
+  width: 50em;
+  border-radius: 2em;
+  padding-right: 2em
+}
+.bout{
+  background: white;
+  margin-left: -2.4em;
+  border-radius: 0em 2em 2em 0em;
+  padding: 0px 0.4em;
+}
+.serchimg{
+  font-size: 1.3em;
+}
+
+
+.item1{
+  height: 470px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+}
+.detaiSlid{
+
+}
+
+.actualite{
+  height: 100%;
+}
+.actualite img{
+  width: 22em;
+  height: 160px;
+}
+.actualite h3{
+  word-wrap: normal;
+}
+
+
+.enteteactu{
+  padding: 2em;
+}
+.enteteactu h2{
+  border-left: 3px solid green;
+  padding-left: 1.5em;
+  display: inline-block;
+}
+.enteteactu a{
+  float: right;
+}
+
+.rens{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.rens a{
+  text-decoration: underline;
+}
+.rens .ilab{
+  font-size: 3em;
+  margin-right: 0.3em;
+}
+
+.querep .item{
+  margin-right: 2em;
+}
+.querep div{
+  border: 1px dashed black;
+  padding: 1.2em;
+  width: 26em;
+}
+footer{
+  background-image: url('../images/best/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+footer div{
+  margin-right: 7em;
+}
+.foot h6,.foot a{
+  color: white;
+}
+
+footer a:hover{
+  color: orange;
+}
+
+/*
+  Animation
+*/
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}

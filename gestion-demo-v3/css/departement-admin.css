@@ -1,0 +1,49 @@
+.rechform{
+    position: absolute;
+
+    right: 2em;
+  }
+  .content{
+    padding: 2em 0.5em;
+    padding-left: 1.5em;
+  }
+  .menudiv{
+    flex-grow: 1;
+  }
+  #ifr{
+    padding: 0px;
+  }
+  iframe{
+    /*background-image: url('../images/best/devise2.png');
+    background-repeat: no-repeat;*/
+    background-color: lightblue;
+  }
+  #drpmenu li{
+    padding: 0.1em 0.3em;
+  }
+  #drpmenu li:hover{
+    background-color: orange;
+  }
+  #drpmenu a:hover{
+    
+    text-decoration: none;
+  }
+  .discon li{
+    background-color: rgb(213, 80, 67);
+    padding: 0.5em;
+  }
+  .discon a{
+    color: white;
+  }
+  .discon a:hover{
+    text-decoration: none;
+  }
+  .discon{
+    padding: 0.1px;
+  }
+  .discon li:hover{
+    background-color: red;
+  }
+  .content{
+    background-image: url('../images/best/bag.jpg');
+  }

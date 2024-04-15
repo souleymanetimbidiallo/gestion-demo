@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/MaterialDesign-Webfont-master/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ov.css">
+    <link rel="stylesheet" href="../css/departement-admin.css">
+    <title>Administration- Etat Civil</title>
+  </head>
+  <body>
+    
+  <div class="divflex vcenter content bg-secondary">
+    
+    <div class="">
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                <i class="mdi mdi-account-tie" style="font-size: 1.5em"></i><span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu discon">
+                <li><a href="deconnexion.php">Déconnexion</a></li>
+              </ul>
+          </div>
+    </div>
+
+    <h1 class="ml-5 mr-0 text-white h3"><i class="mdi mdi-home"></i> Administration - Etat Civil</h1>
+    
+    <div class="divflex hcenter menudiv">
+          <div class="dropdown">
+              <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" type="button" name="button">Déclarations</button>
+              <ul class="dropdown-menu" id="drpmenu">
+                <li><a href="../demande/declaration-naissance/tableau_declaration_naissance.html.php" target="fram">Déclaration de naissance</a></li>
+                <li><a href="../demande/declaration-deces/tableau_declaration_deces.php" target="fram">Déclaration de déces</a></li>
+
+              </ul>
+          </div>
+          <div class="dropdown ml-5">
+              <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" type="button" name="button">Demandes</button>
+              <ul class="dropdown-menu" id="drpmenu">
+
+                <li><a href="../demande/certificat-mariage/reponse-certificat-mariage.php" target="fram">Certificat de Mariage</a></li>
+                <li><a href="../demande/acte-naissance/reponseActeNaissance.php" target="fram">Acte de naissance</a></li>
+                <li><a href="../demande/certificat-deces/reponse-certificat-deces.php" target="fram">Acte de déces</a></li>
+
+              </ul>
+          </div>
+          <div class="dropdown ml-5">
+              <button class="btn btn-outline-warning dropdown-toggle" data-toggle="dropdown" type="button" name="button">Papiers</button>
+              <ul class="dropdown-menu" id="drpmenu">
+
+                <li><a href="../demande/certificat-mariage/tableau_acte_mariage.php" target="fram">Certificat de Mariage</a></li>
+                <li><a href="../demande/acte-naissance/tableau-acte-naissance.php" target="fram">Acte de naissance</a></li>
+                <li><a href="../demande/certificat-deces/tableau_deces.php" target="fram">Acte de déces</a></li>
+
+              </ul>
+          </div>
+    </div>
+
+  </div>
+
+<iframe src="../demande/declaration-naissance/tableau_declaration_naissance.html.php" width="100%" height="668px" id="ifr" name="fram">
+
+</iframe>
+  <script src="../js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/fontawesome-all.min.js"></script>
+  </body>
+</html>
